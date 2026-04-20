@@ -4,3 +4,4 @@ protobuf==7.34.1
 pydantic==2.13.2
 python-dotenv==1.2.2
 Requests==2.33.1
+uvicorn==0.30.0

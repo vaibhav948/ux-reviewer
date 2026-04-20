@@ -152,7 +152,7 @@ export default function App() {
       setLoading(true);
       setData(null);
 
-      const res = await axios.post("http://127.0.0.1:8000/analyze", {
+      const res = await axios.post("https://ux-reviewer-4.onrender.com/analyze", {
         url,
       });
 
@@ -166,7 +166,7 @@ export default function App() {
 
   const fetchHistory = async () => {
     try {
-      const res = await axios.get("http://127.0.0.1:8000/history");
+      const res = await axios.get("https://ux-reviewer-4.onrender.com/history");
       setHistory(res.data);
     } catch (err) {
       console.error(err);
